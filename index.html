@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.img1{
+				-webkit-filter: blur(7px);
+				transition: all 2s;
+				width: 100%;
+			}
+			.img1:hover{
+				-webkit-filter: blur(0px);
+			}
+			.img2:hover{
+				animation: lvjing 10s ;
+				width: 100%;
+			}		
+			@keyframes lvjing{
+				0%{
+					-webkit-filter: blur(7px) grayscale(0.7) brightness(0.5);
+				}
+				80%{
+					-webkit-filter: blur(0px) grayscale(0) brightness(1.2);
+				}
+				100%{
+					-webkit-filter: blur(0px) grayscale(0) brightness(1.2)
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<img class="img1" src="img/山水.jpg" />
+		<img class="img2" src="img/戳爷2.jpg" />
+	</body>
+</html>
